@@ -1,0 +1,270 @@
+* {
+	margin: auto;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #1fe8e2;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
+.button__reverse.to {
+	background-color: darkcyan;
+	color: white;
+	font-size: 20px;
+	position: fixed;
+	margin-left: 250px;
+}
+
+/*
+.form-box {
+  flex-direction: column;
+  display: flex;
+  margin-top: 50px;
+  padding: 30px;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin-bottom: 50px;
+  background-color: aliceblue;
+}
+
+.inputs-box {
+  flex-direction: column;
+  display: flex;
+}
+*/
+.input-wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 0 15px 0;
+}
+
+
+.tooltip-active {
+	color: red;
+	font-size: 0.6rem;
+	margin-left: 35%;
+	margin-top: -10px;
+	width: 100%;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.detail-box {
+	background-color: white;
+}
+
+.detail-wrapper {
+	width: 48%;
+}
+
+h3.form__title {
+	margin-bottom: 25px;
+	color: white;
+	margin-left: 100px;
+}
+
+.trip__form-box {
+	width: 340px;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: beige;
+	border: 1px solid gray;
+	border-radius: 8px;
+	padding: 20px;
+}
+
+button.button__reverse {
+	width: 32px;
+	height: 32px;
+	margin-top: 0;
+	background-image: url(../img/reverse.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.input {
+	height: 32px;
+	margin-left: 15px;
+	padding-left: 5px;
+}
+
+.input__to {
+	width: 75%;
+}
+
+label {
+	margin-left: 0;
+}
+
+.to-wrapper {
+	width: 100%;
+}
+
+.detail-box {
+	background-color: white;
+	height: 32px;
+	display: flex;
+}
+
+.detail-wrapper:nth-child(odd) {
+	margin-left: 0;
+}
+
+h4.detail__title {
+	margin-bottom: 5px;
+}
+
+.input-wrapper.round-trip {
+	flex-direction: column;
+	/* margin: 0; */
+	/* margin-top: 15px; */
+	margin-bottom: 0;
+	margin-bottom: 0;
+}
+
+.detail-wrapper {
+	margin-top: 15px;
+}
+
+.input__round-trip {
+	width: 32px;
+	margin-top: -10px;
+	margin-bottom: 0;
+	margin-left: 0;
+}
+
+.child-count {
+	/*Лучше псевдоэлемент*/
+
+	margin-left: 5px;
+	width: 48%;
+	margin-right: 10px;
+}
+
+.input-calendar {
+	margin-top: 15px;
+	width: 100%;
+}
+
+button.search__termin {
+	border-radius: 5px;
+	background-color: darkcyan;
+	color: white;
+	height: 32px;
+	width: 120px;
+	margin-top: 15px;
+}
+
+button.count__button {
+	height: 25px;
+	width: 25px;
+	background-color: darkcyan;
+	color: white;
+}
+
+.input__there-trip,
+.input__back-to-date {
+	width: 80%;
+	margin: 0;
+	height: 32px;
+}
+
+div#form-container {
+	display: flex;
+	flex-direction: column;
+}
+
+h2.main__title {
+	margin: 30px;
+	font-size: 32px;
+}
+
+button.start__btn {
+	height: 50px;
+	width: 150px;
+	border-radius: 20px;
+	background-color: darkorchid;
+	color: white;
+	font-size: 24px;
+}
+
+.modal {
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+	top: -1000;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1000;
+	background-color: rgba(0, 0, 0, 0.9);
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	overflow-y: scroll;
+	padding: 60px 15px;
+}
+
+.modal-active {
+	position: fixed;
+	top: 0;
+	visibility: visible;
+	opacity: 1;
+	transition: 0.3s;
+}
+
+button.modal-close__btn {
+	width: 32px;
+	height: 32px;
+	border-radius: 32px;
+	color: white;
+	background-color: cornflowerblue;
+
+	margin-bottom: 15px;
+	margin-left: 160px;
+}
+
+.list-wrapper {
+	margin-top: 50px;
+}
+
+table {
+	margin-top: 20px;
+	background-color: whitesmoke;
+	border-radius: 5px;
+}
+
+td,
+th {
+	border: 1px solid #185eb2;
+	padding: 10px;
+}
+
+.button__block {
+	display: flex;
+}
+
+.article__del {
+	width: 25px;
+	height: 25px;
+	border: none;
+	background-image: url(../img/delete.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	cursor: pointer;
+	transition: .3s;
+}
